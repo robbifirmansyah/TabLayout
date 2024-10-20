@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Register"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/register"
+            style="@style/Title"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Username"
+            android:layout_marginBottom="25dp"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Email"
+            android:layout_marginBottom="25dp"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Phone"
+            android:layout_marginBottom="25dp"
+            android:drawableStart="@drawable/baseline_local_phone_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"
+            />
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:layout_marginBottom="25dp"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="14sp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/checkbox"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/baseline_check_box_outline_blank_24" />
+
+            <TextView
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By checking the box you agree to our"
+                android:textSize="10sp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:id="@+id/checkbox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms"
+                android:textSize="10sp"
+                android:layout_marginStart="2dp"
+                android:textColor="#525BFF"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and"
+                android:textSize="10sp"
+                android:layout_marginStart="2dp"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conditions."
+                android:textSize="10sp"
+                android:layout_marginStart="2dp"
+                android:textColor="#525BFF"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/blue_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Already Have an Account? "
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Log In"
+                android:textColor="#525BFF"
+                android:fontFamily="@font/poppins"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
